@@ -1,0 +1,40 @@
+{
+  "name": "rlms-e2e",
+  "scripts": {
+    "start": "cypress open",
+    "e2e": "cypress run",
+    "start:dev1": "cypress open --config-file environments/cypress.dev1.json",
+    "start:uat2": "cypress open --config-file environments/cypress.uat2.json",
+    "start:stgUS": "cypress open --config-file environments/cypress.stg-us.json",
+    "start:stgUK": "cypress open --config-file environments/cypress.stg-uk.json",
+    "start:stgDE": "cypress open --config-file environments/cypress.stg-de.json",
+    "start:stgCN": "cypress open --config-file environments/cypress.stg-cn.json",
+    "e2e:dev1": "cypress run --config-file environments/cypress.dev1.json",
+    "e2e:uat2": "cypress run --config-file environments/cypress.uat2.json",
+    "e2e:stgUS": "cypress run --config-file environments/cypress.stg-us.json",
+    "e2e:stgUK": "cypress run --config-file environments/cypress.stg-uk.json",
+    "e2e:stgDE": "cypress run --config-file environments/cypress.stg-de.json",
+    "e2e:stgCN": "cypress run --config-file environments/cypress.stg-cn.json",
+    "e2e:record": "cypress run --record --key a510848c-564e-4a17-890b-356581ef21c6 --parallel",
+    "lint": "tslint ./cypress/**/*.{js,ts}",
+    "prettier:check": "prettier --check \"**/*.{js,ts,scss,json,html}\"",
+    "prettier:write": "prettier --write \"**/*.{js,ts,scss,json,html}\""
+  },
+  "devDependencies": {
+    "@cypress/webpack-preprocessor": "^4.0.3",
+    "@types/faker": "^4.1.5",
+    "@types/uuid": "^3.4.4",
+    "cypress": "^4.1.0",
+    "faker": "^4.1.0",
+    "prettier": "^1.16.4",
+    "ts-loader": "^5.3.3",
+    "tsify": "^4.0.1",
+    "tslint": "^5.12.1",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.3.3",
+    "uuid": "^3.3.2",
+    "webpack": "^4.29.2",
+    "webpack-cli": "^3.2.3"
+  }
+}
