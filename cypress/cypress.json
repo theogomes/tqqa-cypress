@@ -1,0 +1,16 @@
+{
+  "numTestsKeptInMemory": 1,
+  "baseUrl": "http://localhost/login",
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 30000,
+  "supportFile": "cypress/support/index.ts",
+  "env": {
+    "loginUrl": "http://localhost:80/login",
+    "e2eOrgId": 10564,
+    "e2eUrl": "e2e",
+    "baseAngular": "",
+    "TEMPORARY_plmFinalExamId": 2681,
+    "legacyFilePath": "C:/Users/tgomes/projects"
+  },
+  "projectId": "pwrojd"
+}

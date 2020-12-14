@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": "../node_modules",
+    "target": "es2018",
+    "lib": ["es5", "dom"],
+    "types": ["cypress", "faker"],
+    "jsx": "react"
+  },
+  "include": ["**/*.ts", "fixtures/admin.js"]
+}
