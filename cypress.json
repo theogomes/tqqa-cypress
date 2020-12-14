@@ -6,12 +6,7 @@
   "supportFile": "cypress/support/index.ts",
   "env": {
     "loginUrl": "http://localhost:80/login",
-    "apiUrl": "http://localhost/api/v1/",
-    "e2eOrgId": 10564,
-    "e2eUrl": "e2e",
-    "baseAngular": "",
-    "TEMPORARY_plmFinalExamId": 2681,
-    "legacyFilePath": "C:/Users/tgomes/projects"
+    "apiUrl": "http://localhost/api/v1/"
   },
   "projectId": "abc"
 }
