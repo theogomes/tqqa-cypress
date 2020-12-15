@@ -91,12 +91,9 @@ describe("Create User workflow", () => {
     // verify table contains the newly created user name and email
     cy.get(".v-select__slot").click();
     cy.get(".v-list")
-      .children()
-      .then((children) => {
-        cy.get(children)
-          .eq(3)
-          .click(); // change rows per page to All
-      });
+      .find("div")
+      .contains("All")
+      .click(); // change rows per page to All
 
     cy.get(".v-table__overflow").then((table) => {
       cy.contains("Full Name")
