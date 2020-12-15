@@ -1,6 +1,6 @@
 import * as users from "../../fixtures/users";
 
-describe("Login workflow", () => {
+describe("View profile workflow", () => {
   beforeEach(() => {
     cy.adminLogin();
   });
