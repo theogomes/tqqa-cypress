@@ -78,12 +78,10 @@ describe("Manage User workflow", () => {
   it("should change order and verify", () => {
     cy.get(".v-select__slot").click();
     cy.get(".v-list")
-      .children()
-      .then((children) => {
-        cy.get(children)
-          .eq(3)
-          .click();
-      });
+      .find("div")
+      .contains("All")
+      .click(); // change rows per page to All
+
     cy.get(".v-table__overflow").then((table) => {
       // sort up and verify user emails are sorted in a-z order
       cy.contains("Email")
