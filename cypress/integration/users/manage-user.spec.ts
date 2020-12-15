@@ -1,6 +1,6 @@
 import * as users from "../../fixtures/users";
 
-describe("Login workflow", () => {
+describe("Manage User workflow", () => {
   const USERNAME = "John Smith";
   const EMAIL = "user@user.com";
   const fillUserForm = () => {
